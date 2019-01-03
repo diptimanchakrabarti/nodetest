@@ -1,6 +1,6 @@
 const express = require('express')
 const mongo = require('mongodb').MongoClient
-const url = 'mongodb://localhost:27017'
+const url = 'mongodb://178.128.187.116:27017'
 let db, trips, expenses,memberinfo
 mongo.connect(
     url,
