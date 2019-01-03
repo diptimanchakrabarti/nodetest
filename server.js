@@ -89,4 +89,9 @@ app.post('/expense', (req, res) => {
       res.status(200).json({ members: items })
     })
   })
+  app.post('/testtrip', (req, res) => {
+    const name = req.body.name
+    res.status(200).json({ ok: true })
+    
+  })
 app.listen(3000, () => console.log('Server ready'))
